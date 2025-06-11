@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Education from "./Education";
 import Skills from './Skills';
+import Footer from './Footer';
 
 export {
   Hero,
@@ -20,6 +21,7 @@ export {
   Works,
   Certificates, // ✅ Updated here
   Education,
+  Footer,
   Skills,
   Contact,
   CanvasLoader,

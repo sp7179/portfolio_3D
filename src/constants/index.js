@@ -263,56 +263,32 @@ const projects = [
 ];
 
 // src/constants/index.js
-const certificates = {
-  course: [
-    {
-      title: "AI A-Z: Agentic AI",
-      issuer: "Udemy",
-      date: "Feb 2025",
-      image: "/certificates/ai_course.jpg",
-      link: "https://www.udemy.com/certificate/example1"
-    },
-    {
-      title: "Web Development Bootcamp",
-      issuer: "Coursera",
-      date: "Jan 2024",
-      image: "/certificates/web_course.jpg",
-      link: "https://www.coursera.org/certificate/example2"
-    }
-  ],
-  achievements: [
-    {
-      title: "Top Performer in AI Hackathon",
-      issuer: "SRMIST",
-      date: "Nov 2024",
-      image: "/certificates/hackathon.jpg",
-      link: "https://example.com/hackathon"
-    },
-    {
-      title: "Excellence in Coding",
-      issuer: "GeeksforGeeks",
-      date: "Aug 2023",
-      image: "/certificates/gfg_award.jpg",
-      link: "https://example.com/gfg_award"
-    }
-  ],
-  participation: [
-    {
-      title: "AI Webinar Series",
-      issuer: "Google Developers",
-      date: "Mar 2024",
-      image: "/certificates/webinar.jpg",
-      link: "https://example.com/webinar"
-    },
-    {
-      title: "Open Source Summit",
-      issuer: "GitHub",
-      date: "Oct 2023",
-      image: "/certificates/oss_summit.jpg",
-      link: "https://example.com/oss_summit"
-    }
-  ]
-};
+// src/constants/index.js
+
+const certificates = [
+  {
+    title: "AI A-Z: Gen AI + RL",
+    institution: "Udemy",
+    date: "2025",
+    points: ["Completed with Certificate", "Covers Gen AI, RL, Agentic AI"],
+    category: "Courses",
+  },
+  {
+    title: "Winner - CodeFest 2024",
+    institution: "SRMIST",
+    date: "2024",
+    points: ["Won 1st prize in 36-hour hackathon"],
+    category: "Achievements",
+  },
+  {
+    title: "ML Bootcamp",
+    institution: "IIT Delhi",
+    date: "2023",
+    points: ["Attended 5-day intensive ML workshop"],
+    category: "Participation",
+  },
+];
+
 
 const educations = [
   {
