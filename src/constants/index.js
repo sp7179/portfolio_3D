@@ -314,5 +314,45 @@ const certificates = {
   ]
 };
 
+const educations = [
+  {
+    title: "B.Tech in Computer Science",
+    institution: "SRMIST, Delhi NCR",
+    date: "2023 - 2027",
+    icon: "🎓",
+    points: ["CGPA: 9.95"],
+  },
+  {
+    title: "Class 12 - Science Stream",
+    institution: "Air Force School, Hindan",
+    date: "2022 - 2023",
+    icon: "🧪",
+    points: ["Percentage: 91.2%"],
+  },
+  {
+    title: "Class 10",
+    institution: "Air Force School, Hindan",
+    date: "2020 - 2021",
+    icon: "📘",
+    points: ["Percentage: 96.5%"],
+  },
+];
 
-export { services, technologies, experiences, testimonials, projects, certificates };
+const skills = [
+  {
+    title: "Languages & Databases",
+    items: ["Python", "Java", "JavaScript", "SQL", "MySQL", "MongoDB", "PostgreSQL"],
+  },
+  {
+    title: "Frameworks & Technologies",
+    items: ["React.js", "Next.js", "Node.js", "Express.js", "HTML", "CSS"],
+  },
+  {
+    title: "Additional Tools & Libraries",
+    items: ["MS Excel", "Pandas", "NumPy"],
+  },
+];
+
+
+
+export { services, technologies, experiences, testimonials, projects, certificates, educations, skills };

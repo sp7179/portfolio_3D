@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
 // Import the new Certificates component
-import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, Certificates } from "./components";
+import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas, Certificates, Education, Skills } from "./components";
 
 const App = () => {
   return (
@@ -13,6 +13,8 @@ const App = () => {
         </div>
 
         <About />
+        <Education /> {/* ✅ Adding Education section */}
+        <Skills /> {/* ✅ Adding Skills section */}
         <Experience />
         <Tech />
         <Works />

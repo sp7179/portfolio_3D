@@ -8,6 +8,8 @@ import Works from "./Works";
 import Certificates from "./Certificate"; // ✅ New import
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import Education from "./Education";
+import Skills from './Skills';
 
 export {
   Hero,
@@ -17,6 +19,8 @@ export {
   Experience,
   Works,
   Certificates, // ✅ Updated here
+  Education,
+  Skills,
   Contact,
   CanvasLoader,
   EarthCanvas, 
