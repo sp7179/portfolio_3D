@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+    content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html"
+  ],
   mode: "jit",
   theme: {
     extend: {
@@ -14,6 +17,7 @@ module.exports = {
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
+        glow: "0 0 12px rgba(255, 255, 255, 0.5)",
       },
       screens: {
         xs: "450px",
