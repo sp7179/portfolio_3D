@@ -59,23 +59,26 @@ const About = () => {
           code. Let's build something impactful together!
         </motion.p>
 
-        {/* Pentagon Image */}
-        <motion.div
-          whileHover={{
-            scale: 1.05,
-            rotate: [0, -1.5, 1.5, -1.5, 0],
-            boxShadow: "0 0 25px 5px rgba(165, 105, 255, 0.5)",
-          }}
-          transition={{ duration: 0.5 }}
-          className="relative w-[220px] h-[220px] cursor-pointer group"
-        >
-          <div className="absolute inset-0 rounded-[10%] z-0 blur-lg bg-purple-500 opacity-20 group-hover:animate-pulse pointer-events-none" />
-          <img
-            src={profileImg}
-            alt="profile"
-            className="w-full h-full object-cover rounded-full border-4 border-purple-500 shadow-lg transition-all duration-500"
-          />
-        </motion.div>
+        {/* Profile Image */}
+        <div className="w-full flex justify-center items-center">
+          <motion.div
+            whileHover={{
+              scale: 1.05,
+              rotate: [0, -1.5, 1.5, -1.5, 0],
+              boxShadow: "0 0 25px 5px rgba(165, 105, 255, 0.5)",
+            }}
+            transition={{ duration: 0.5 }}
+            className="relative w-[160px] h-[160px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] lg:w-[220px] lg:h-[220px] cursor-pointer group"
+          >
+            <div className="absolute inset-0 rounded-[10%] z-0 blur-lg bg-purple-500 opacity-20 group-hover:animate-pulse pointer-events-none" />
+            <img
+              src={profileImg}
+              alt="profile"
+              className="w-full h-full object-cover rounded-full border-4 border-purple-500 shadow-lg transition-all duration-500"
+            />
+          </motion.div>
+        </div>
+
       </div>
 
       <div className="mt-20 flex flex-wrap gap-10">

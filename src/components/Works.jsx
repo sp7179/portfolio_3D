@@ -117,9 +117,23 @@ const ProjectCard = ({
     </motion.div>
   );
 };
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  React.useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return isMobile;
+};
+
 
 const Works = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const isMobile = useIsMobile();
 
   const hasPrev = currentIndex > 0;
   const hasNext = currentIndex < projects.length - 1;
@@ -133,10 +147,14 @@ const Works = () => {
   };
 
   const getPosition = (index) => {
-    if (index === currentIndex) return "center";
-    if (index === currentIndex - 1) return "left";
-    if (index === currentIndex + 1) return "right";
-    return "hidden";
+    if (isMobile) {
+      return index === currentIndex ? "center" : "hidden";
+    } else {
+      if (index === currentIndex) return "center";
+      if (index === currentIndex - 1) return "left";
+      if (index === currentIndex + 1) return "right";
+      return "hidden";
+    }
   };
 
   return (
@@ -161,7 +179,7 @@ const Works = () => {
       {/* Project Carousel */}
       <div className="mt-12 relative w-full max-w-7xl mx-auto px-4 md:px-6 flex items-center justify-center">
         {/* Left Arrow */}
-        <div className="absolute left-[-30px] md:left-[-40px]">
+        <div className="absolute left-[-20px] md:left-[-40px]">
           <button
             onClick={prev}
             disabled={!hasPrev}
@@ -177,7 +195,10 @@ const Works = () => {
         </div>
 
         {/* Cards */}
-        <div className="flex items-center justify-center gap-4 h-[620px] overflow-hidden">
+        <div
+          className={`flex ${isMobile ? "justify-center w-full" : "justify-center gap-4"
+            } items-center h-[620px] overflow-hidden`}
+        >
           {projects.map((project, index) => {
             const position = getPosition(index);
             return (
@@ -192,7 +213,7 @@ const Works = () => {
         </div>
 
         {/* Right Arrow */}
-        <div className="absolute right-[-30px] md:right-[-40px]">
+        <div className="absolute right-[-20px] md:right-[-40px]">
           <button
             onClick={next}
             disabled={!hasNext}
@@ -214,5 +235,7 @@ const Works = () => {
     </>
   );
 };
+
+
 
 export default SectionWrapper(Works, "");
