@@ -46,12 +46,12 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 
-import career_coach from "./projects/career coach.png";
-import desktop_assistant from "./projects/desktop assistant.png";
+import career_coach from "./projects/career_coach.png";
+import desktop_assistant from "./projects/desktop_assistant.png";
 import diabetes from "./projects/diabetes.png"; 
-import document_analysis from "./projects/document analysis.png";
-import financial_analysis from "./projects/financial analysis.png";
-import leetcode_ext from "./projects/leetcode ext.png";
+import document_analysis from "./projects/document_analysis.png";
+import financial_analysis from "./projects/financial_analysis.png";
+import leetcode_ext from "./projects/leetcode_ext.png";
 import trading_bot from "./projects/trading bot.png";
 import gfg from "./projects/gfg.png";
 import signGame from "./projects/signGame.png";
