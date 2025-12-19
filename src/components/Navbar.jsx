@@ -80,14 +80,21 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === nav.title ? "text-white" : "text-secondary"}
+        hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+
+          <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
+          </li>
         </ul>
+
 
         {/* Mobile Navigation */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -116,7 +123,17 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+
+              <li
+                className="font-poppins font-medium text-[16px] py-2 text-secondary cursor-pointer"
+                onClick={() => setToggle(false)}
+              >
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  Resume
+                </a>
+              </li>
             </ul>
+
           </div>
         </div>
       </div>

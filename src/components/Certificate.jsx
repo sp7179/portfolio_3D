@@ -34,6 +34,8 @@ const Certificates = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Recognitions & Proof of Work</p>
+    
+
         <h2 className={styles.sectionHeadText}>Certificates</h2>
       </motion.div>
 

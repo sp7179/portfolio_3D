@@ -17,15 +17,18 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
+import tailwindcss from "./tech/tailwindcss.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import nextjs from "./tech/nextjs.png";
 import flask from "./tech/flask.png"; 
-import gemini from "./tech/gemini.png";
-import python from "./tech/python.jpg";
-import java from "./tech/java.jpg";
-import SQL from "./tech/SQL.jpg";
+import fastapi from "./tech/fastapi.png";
+import springboot from "./tech/springboot.png";
+import linux from "./tech/linux.png";
+import vercel from "./tech/vercel.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
+import sql from "./tech/sql.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -34,17 +37,27 @@ import tesla from "./company/tesla.png";
 import wipro from "./company/wipro.png";
 import next24 from "./company/next24.png";
 import devtown from "./company/devtown.png";
+import eduversity from "./company/eduversity.png";
+import bel from "./company/bel.png";
+import infosys from "./company/infosys.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+
 import career_coach from "./projects/career coach.png";
-import desktop_assistant from "./projects/Desktop Assistant.png";
+import desktop_assistant from "./projects/desktop assistant.png";
 import diabetes from "./projects/diabetes.png"; 
-import document_analysis from "./projects/document analyis.png";
-import financial_analysis from "./projects/finacial dashboard.png";
+import document_analysis from "./projects/document analysis.png";
+import financial_analysis from "./projects/financial analysis.png";
 import leetcode_ext from "./projects/leetcode ext.png";
 import trading_bot from "./projects/trading bot.png";
+import gfg from "./projects/gfg.png";
+import signGame from "./projects/signGame.png";
+import feedback from "./projects/feedback.png";
+import medicalBot from "./projects/medicalBot.png";
+
 
 export {
   logo,
@@ -55,6 +68,7 @@ export {
   github,
   menu,
   close,
+
   css,
   docker,
   figma,
@@ -65,25 +79,35 @@ export {
   nodejs,
   reactjs,
   redux,
-  tailwind,
+  tailwindcss,
   typescript,
   threejs,
+  python,
+  java,
+  sql,
+  nextjs,
+  flask, 
+  fastapi,
+  springboot,
+  linux,
+  vercel,
+
   meta,
   wipro,
+  eduversity,
   next24,
   devtown,
   shopify,
   starbucks,
   tesla,
-  python,
-  java,
-  SQL,
+  bel,
+  infosys,
+  
+  
   carrent,
   jobit,
   tripguide,
-  nextjs,
-  flask,  
-  gemini,
+   
   career_coach,
   desktop_assistant,
   diabetes,
@@ -91,4 +115,9 @@ export {
   financial_analysis,
   leetcode_ext,
   trading_bot,
+  gfg,
+  signGame,
+  feedback,
+  medicalBot,
+  
 };
