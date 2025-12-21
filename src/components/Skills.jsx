@@ -14,10 +14,20 @@ const icons = {
 };
 
 const SkillBubble = ({ text }) => (
-  <div className="px-4 py-2 m-2 rounded-full bg-gradient-to-br from-purple-600 to-violet-700 text-white text-sm shadow-lg">
+  <motion.div
+    animate={{ y: [0, -8, 0] }}
+    transition={{
+      duration: 2 + Math.random(),
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+    whileHover={{ scale: 1.08 }}
+    className="px-4 py-2 m-2 rounded-full bg-gradient-to-br from-purple-600 to-violet-700 text-white text-sm shadow-lg"
+  >
     {text}
-  </div>
+  </motion.div>
 );
+
 
 const SkillBox = ({ title, items, index }) => (
   <motion.div
